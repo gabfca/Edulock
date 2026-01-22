@@ -18,9 +18,28 @@ Edulock é um simulador educativo de ransomware desenvolvido em Python. Permite 
 
 ## Uso
 
-1. Configurar a pasta de teste.  
-2. Executar o script em modo simulação para observar alterações.  
-3. Executar em modo reversão para restaurar os ficheiros modificados.
+**Comandos principais (Windows / Linux):**
+
+```bash
+# Simulação (apenas altera/renomeia ficheiros de teste)
+python ransomware_educativo.py simulate "C:\LAB\PASTA_TESTE" --ext .txt .docx .pdf
+
+# Restauração dos ficheiros alterados
+python ransomware_educativo.py restore "C:\LAB\PASTA_TESTE"
+```
+
+**Passos detalhados:**
+
+1. Criar e configurar uma pasta de teste segura (ex.: `C:\LAB\PASTA_TESTE` ou `~/lab/teste` no Linux).  
+2. Executar o script em modo `simulate` para observar alterações simuladas:  
+   - Ficheiros elegíveis são transformados reversivelmente (Base64).  
+   - Ficheiros são renomeados com a extensão `.edu_locked`.  
+   - É criada a nota educativa `README_RESCATE_EDUCATIVO.txt`.  
+3. Executar o script em modo `restore` para reverter as alterações:  
+   - Ficheiros `.edu_locked` são restaurados ao estado original.  
+   - A nota educativa pode ser apagada manualmente.
+
+> **Dica:** Para integração com ferramentas de monitorização como Wazuh FIM, aponte a pasta de teste para gerar eventos sem risco real.
 
 ## Aviso Ético
 
