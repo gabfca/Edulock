@@ -1,6 +1,8 @@
 # Edulock – Simulador Educativo de Ransomware
 
-**Aviso:** Este código é apenas para fins académicos e educativos. Não implementa criptografia real nem deve ser usado fora de um ambiente controlado.
+Este projeto **NÃO DEVE SER EXECUTADO FORA DE UMA MÁQUINA VIRTUAL (VM)**.  
+
+**Aviso:** Este código é apenas para fins académicos e educativos. Não implementa criptografia real nem deve ser usado fora de um ambiente controlado. A execução em sistemas reais (host) pode causar perda de dados, danos em ficheiros pessoais e comportamentos indesejados.
 
 ## Descrição
 
