@@ -23,3 +23,5 @@ Edulock é um simulador educativo de ransomware desenvolvido em Python. Permite 
 ## Aviso Ético
 
 Todo o desenvolvimento respeita normas de segurança e ética. O código destina-se apenas a estudo e treino, não a uso real.
+
+![Logo](extra/logo.png)
